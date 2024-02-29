@@ -4,15 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Robin Shing Moon Chan</title>
-<!-- Link to Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-<!-- Custom CSS -->
-<style>
-    body {
-        font-family: 'Spectral', serif; /* Apply Spectral font */
-        font-size: 22px;
-    }
-</style>
 
 <style>
   body {
@@ -57,14 +48,6 @@
     margin-bottom: 10px;
   }
 
-  .vertical-whitespace {
-    height: 300px; /* Adjust the height as needed */
-  }
-
-  .whitespace {
-    flex: 0 0 300px; /* Does not grow or shrink, but has a basis of 20px */
-  }
-
   #card {
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */
@@ -82,7 +65,7 @@
   /* Media Query for smaller screens */
   @media (max-width: 768px) {
       #container {
-          padding-top: 0;
+          height: auto;
       }
       #content {
           display: block;
@@ -132,7 +115,7 @@
 <body>
   <div id="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
     <!-- <div id="container" style="position: absolute; top: 50%; left: 50%;"> -->
-    <img src="images/chanr_photo.jpg" alt="Moving Picture" style="width: 200px; height: auto; clip-path: ellipse(50% 50% at 50% 50%) ;">
+    <img src="images/chanr_photo.jpg" alt="Moving Picture" style="width: 300px; clip-path: ellipse(50% 50% at 50% 50%) ;">
   </div>
 
   <div id="content">
@@ -151,7 +134,7 @@
               PhD Student in HCI and NLP @ ETH Zürich
             </p>
             <p style="text-align:center;">
-              <img src="images/chanr_photo.jpg" alt="Moving Picture" style="width: 200px; height: auto; clip-path: ellipse(50% 50% at 50% 50%);">
+              <img src="images/chanr_photo.jpg" style="width: 40%; clip-path: ellipse(50% 50% at 50% 50%);">
             </p>
             <p style="text-align:center">
               <a href="mailto:chanr@ethz.ch">Email</a> &nbsp/&nbsp
