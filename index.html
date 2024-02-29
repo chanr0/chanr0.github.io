@@ -2,7 +2,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Robin Shing Moon Chan</title>
 <!-- Link to Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
@@ -19,8 +19,8 @@
     margin: 0;
     padding: 0;
     /* overflow: hidden; Hide horizontal scrollbar */
-    background-image: url('images/chanr_photo.jpg');
-    background-size: 300%; /* Increase the background size by 150% */
+    background-image: url('images/chanr_photo_background.jpg');
+    background-size: cover; /* Increase the background size by 150% */
 
   }
 
@@ -79,6 +79,27 @@
   margin: auto; /* Center horizontally */
 }
 
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+      #container {
+          padding-top: 0;
+      }
+      #content {
+          display: block;
+      }
+      .container {
+          flex-direction: column;
+          align-items: center;
+      }
+      .column {
+          padding: 10px;
+          text-align: center;
+      }
+      .column:first-child {
+          margin-right: 0;
+      }
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -127,7 +148,7 @@
               <name><u>Robin</u> Shing Moon Chan</name>
             </p>
             <p style="text-align:center; color: rgb(77, 77, 77)">
-              PhD Student @ ETH Zürich
+              PhD Student in HCI and NLP @ ETH Zürich
             </p>
             <p style="text-align:center;">
               <img src="images/chanr_photo.jpg" alt="Moving Picture" style="width: 200px; height: auto; clip-path: ellipse(50% 50% at 50% 50%);">
@@ -140,22 +161,22 @@
             </p>
           </div>
           <div class="column">
-            <p style="text-align:center">
-              <name>About Me</name>
+            <p style="text-align:justify">
+              <heading>About Me</heading>
             </p>
-            <p>
+            <p style="text-align:justify">
               I'm a first-year CS PhD student at the <a href="https://inf.ethz.ch/research/visual-computing.html">Institute for Visual Computing</a>
               and the <a href="https://ml.inf.ethz.ch/">Institute for Machine Learning</a> at ETH Zürich.
               I'm co-advised by Prof. Menna El-Assady (<a href="https://ivia.ethz.ch/">IVIA</a>) and Prof. Ryan Cotterell (<a href="https://rycolab.io/">Rycolab</a>).
               Previously, I obtained a master's degree in data science from ETH Zürich,
               graduating with a thesis on LLM code generation at <a href="https://www.zurich.ibm.com/">IBM Research Europe (ZRL)</a>.
             </p>
-            <p>
+            <p style="text-align:justify">
               I'm curious about many things. My main research interest lies at the intersection of visualization and natural language processing.
               Namely, I want to better understand how to make humans and LLMs interact more <em>effectively</em>
               through mutual knowledge externalization.
             </p>
-            <p>
+            <p style="text-align:justify">
               If you're interested by similar things, message me. I'm looking for collaborators and motivated master's students to supervise.
             </p>
             <p>
