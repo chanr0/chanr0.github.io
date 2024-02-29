@@ -67,8 +67,11 @@
       #container {
           height: auto;
       }
+      /* Hide content by default */
       #content {
-          display: block;
+        display: none;
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeIn 1s ease forwards; /* Smooth fade-in animation */
       }
       .container {
           flex-direction: column;
@@ -156,13 +159,13 @@
             </p>
             <p style="text-align:justify">
               I'm curious about many things. My main research interest lies at the intersection of visualization and natural language processing.
-              Namely, I want to better understand how to make humans and LLMs interact more <em>effectively</em>
+              More concretely, I want to better understand how to make humans and LLMs interact more <em>effectively</em>
               through mutual knowledge externalization.
             </p>
             <p style="text-align:justify">
               If you're interested by similar things, message me. I'm looking for collaborators and motivated master's students to supervise.
             </p>
-            <p>
+            <p style="text-align: justify;">
               <strong>Personal bits:</strong> some of my favorite books: [<a href="https://www.goodreads.com/book/show/9402073-tauben-fliegen-auf">1</a>,
               <a href="https://www.goodreads.com/book/show/406235.Giovanni_s_Room?from_search=true&from_srp=true&qid=rEcFQz1BK6&rank=1">2</a>],
               some of my favorite movies: [<a href="https://www.imdb.com/title/tt0113247/?ref_=nv_sr_srsg_1_tt_6_nm_1_q_la%2520haine">1</a>,
@@ -172,10 +175,6 @@
                 <!-- <img src="https://github.com/chanr0/chanr0.github.io/blob/main/images/chanr_photo.png?raw=true" alt="Description of the Image"> -->
             </a>.
             </p>
-
-            <!-- <p>
-              Personal bits: young me at my hometown's pumpkin festival, me with my christmas caroling group (book us before we're famous).
-            </p> -->
           </div>
         </div>
           
