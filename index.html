@@ -78,7 +78,7 @@
   /* border-radius: 8px; Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
   padding: 20px; /* Add padding */
-  background-color: #b99e6cbe; /* Add fill color */
+  background-color: #a58c5ebe; /* Add fill color */
   max-width: 75%; /* Set maximum width */
   min-width: 25%; /* Set minimum width */
   margin: auto; /* Center horizontally */
@@ -195,9 +195,6 @@
           </div>
         </div>
       
-      
-
-
         <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
@@ -246,6 +243,166 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
+                <img src='images/homotopy.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>On Affine Homotopy between Language Encoders</papertitle>
+              <br>
+              <strong class="small-font">Robin SM Chan</strong>, 
+              <small>Reda Boumasmoud</small>,
+              <small>Anej Svete</small>,
+              <small>Yuxin Ren</small>,
+              <small>Qipeng Guo</small>,
+              <small>Zhijing Jin</small>,
+              <small>Shauli Ravfogel</small>,
+              <small>Mrinmaya Sachan</small>,
+              <small>Bernhard Schölkopf</small>,
+              <small>Mennatallah El-Assady</small>,
+              <small>Ryan Cotterell</small>
+              <br>
+              <em class="small-font">Preprint</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2406.02329">arXiv</a></span>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    Pre-trained language encoders -- functions that represent text as vectors -- are an integral component of many NLP tasks.
+                    We tackle a natural question in language encoder analysis: What does it mean for two encoders to be similar? We contend that
+                    a faithful measure of similarity needs to be <em>intrinsic</em>, that is, task-independent, yet still be informative of <em>extrinsic</em>
+                     similarity -- the performance on downstream tasks. It is common to consider two encoders similar if they are <em>homotopic</em>, i.e.,
+                     if they can be aligned through some transformation. In this spirit, we study the properties of <em>affine</em> alignment of language
+                     encoders and its implications on extrinsic similarity. We find that while affine alignment is fundamentally an asymmetric notion of
+                     similarity, it is still informative of extrinsic similarity. We confirm this on datasets of natural language representations. Beyond
+                     providing useful bounds on extrinsic similarity, affine intrinsic similarity also allows us to begin uncovering the structure of the
+                     space of pre-trained encoders by defining an order over them.
+              </small>
+            </div>
+          </div>
+  
+              <p style="text-align: center;"> <strong class="small-font">Large Language Model Similarity </strong>&#183;<strong class="small-font"> Metric Spaces</strong></p>
+            </td>
+          </tr>
+      </tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
+                <img src='images/nadav.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>What Languages are Easy to Language-Model? A Perspective from Learning Probabilistic Regular Languages</papertitle>
+              <br>
+              <small>Nadav Borenstein</small>,
+              <small>Anej Svete</small>,
+              <strong class="small-font">Robin SM Chan</strong>, 
+              <small>Josef Valvoda</small>,
+              <small>Franz Nowak</small>,
+              <small>Isabelle Augenstein</small>,
+              <small>Eleanor Chodroff</small>,
+              <small>Ryan Cotterell</small>
+              <br>
+              <small>Published in </small> 
+              <em class="small-font">Proceedings of ACL, 2024.</em> <span class="small-font">Bangkok, Thailand | </span> <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a></span>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    What can large language models learn? By definition, language models (LM) are distributions
+                    over strings. Therefore, an intuitive way of
+                    addressing the above question is to formalize
+                    it as a matter of learnability of <em>classes</em> of distributions over strings. While prior work in this
+                    direction focused on assessing the theoretical
+                    limits, in contrast, we seek to understand the
+                    empirical learnability. Unlike prior empirical
+                    work, we evaluate neural LMs on their home
+                    turf—learning probabilistic languages—rather
+                    than as classifiers of formal languages. In
+                    particular, we investigate the learnability of
+                    regular LMs (RLMs) by RNN and Transformer
+                    LMs. We empirically test the learnability of
+                    RLMs as a function of various complexity
+                    parameters of the RLM and the hidden state
+                    size of the neural LM. We find that the RLM
+                    rank, which corresponds to the size of linear
+                    space spanned by the logits of its conditional
+                    distributions, and the expected length of
+                    sampled strings are strong and significant
+                    predictors of learnability for both RNNs and
+                    Transformers. Several other predictors also
+                    reach significance, but with differing patterns
+                    between RNNs and Transformers.
+              </small>
+            </div>
+          </div>
+  
+              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
+            </td>
+          </tr>
+      </tbody>
+  
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
+                <img src='images/rnn_website.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/pdf/2402.15814.pdf"> -->
+                <papertitle>On Efficiently Representing Regular Languages as RNNs</papertitle>
+              </a>
+              <br>
+              <small>Anej Svete</small>,
+              <strong class="small-font">Robin SM Chan</strong>,
+              <small>Ryan Cotterell</small>
+              <br>
+              <small>Published in </small>
+              <em class="small-font"> Findings of ACL</em><span class="small-font">, 2024. Bangkok, Thailand | </span> <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a>
+              <br>
+              <!-- <br>
+              <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a><span class="small-font"></span>
+              <br> -->
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    Recent work by <a href="https://aclanthology.org/2020.emnlp-main.156/" class="small-font">Hewitt et al. (2020)</a> provides
+                    a possible interpretation of the empirical success of recurrent neural networks (RNNs) as
+                    language models (LMs). It shows that RNNs
+                    can efficiently represent bounded hierarchical structures that are prevalent in human language. This suggests that RNNs' success might
+                    be linked to their ability to model hierarchy.
+                    However, a closer inspection of <a href="https://aclanthology.org/2020.emnlp-main.156/" class="small-font">Hewitt et al.'s (2020)</a> construction shows that it is not limited to hierarchical LMs, posing the question
+                    of what other classes of LMs can be efficiently
+                    represented by RNNs. To this end, we generalize their construction to show that RNNs
+                    can efficiently represent a larger class of LMs:
+                    Those that can be represented by a pushdown
+                    automaton with a bounded stack and a generalized stack update function. This is analogous
+                    to an automaton that keeps a memory of a fixed
+                    number of symbols and updates the memory
+                    with a simple update mechanism. Altogether, the efficiency of representing this
+                    diverse class of LMs with RNN LMs suggests
+                    novel interpretations of their inductive bias.
+                  </small>
+              </div>
+            </div>
+              <p style="text-align: center;"> <strong class="small-font">Language Model Expressivity </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
+            </td>
+          </tr>
+      </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
                   <img src='images/llm-analyzer.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
                 </div>
             </td>
@@ -261,7 +418,7 @@
               <small>Hendrik Strobelt</small>,
               <small>Mennatallah El-Assady</small>
               <br>
-              <em class="small-font">Under Review</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2405.00708">arXiv</a>
+              <em class="small-font">Preprint</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2405.00708">arXiv</a>
               <br>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
@@ -289,58 +446,6 @@
           </tr>
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/rnn_website.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/pdf/2402.15814.pdf"> -->
-                <papertitle>A Theoretical Result on the Inductive Bias of RNN Language Models</papertitle>
-              </a>
-              <br>
-              <small>Anej Svete</small>,
-              <strong class="small-font">Robin SM Chan</strong>,
-              <small>Ryan Cotterell</small>
-              <br>
-              <small>To appear in</small><em class="small-font"> Findings of ACL</em><span class="small-font">, 2024. Bangkok, Thailand | </span> <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a>
-              <br>
-              <!-- <br>
-              <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a><span class="small-font"></span>
-              <br> -->
-              <div class="abstract">
-                <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
-                </div>
-                <div class="abstract-content">
-                  <small>
-                    Recent work by <a href="https://aclanthology.org/2020.emnlp-main.156/" class="small-font">Hewitt et al. (2020)</a> provides
-                    a possible interpretation of the empirical success of recurrent neural networks (RNNs) as
-                    language models (LMs). It shows that RNNs
-                    can efficiently represent bounded hierarchical structures that are prevalent in human language. This suggests that RNNs' success might
-                    be linked to their ability to model hierarchy.
-                    However, a closer inspection of <a href="https://aclanthology.org/2020.emnlp-main.156/" class="small-font">Hewitt et al.'s (2020)</a> construction shows that it is not limited to hierarchical LMs, posing the question
-                    of what other classes of LMs can be efficiently
-                    represented by RNNs. To this end, we generalize their construction to show that RNNs
-                    can efficiently represent a larger class of LMs:
-                    Those that can be represented by a pushdown
-                    automaton with a bounded stack and a generalized stack update function. This is analogous
-                    to an automaton that keeps a memory of a fixed
-                    number of symbols and updates the memory
-                    with a simple update mechanism. Altogether,
-                    the efficiency in representing a diverse class
-                    of non-hierarchical LMs posits a lack of concrete cognitive and human-language-centered
-                    inductive biases in RNNs.
-                  </small>
-              </div>
-            </div>
-              <p style="text-align: center;"> <strong class="small-font">Language Model Expressivity </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
-            </td>
-          </tr>
-      </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -358,7 +463,7 @@
                 <small>Mennatallah El-Assady</small>
                 <br>
                 <small>Published in </small><em class="small-font">Proceedings of ACL: System Demonstrations</em><span class="small-font">, 2023. Toronto, Canada | </span>
-                <a href="https://arxiv.org/abs/2306.12146" class="small-font">arXiv</a><small> | </small>
+                <a href="https://arxiv.org/pdf/2306.12146" class="small-font">arXiv</a><small> | </small>
                 <a href="https://dcc-frontend.onrender.com/" class="small-font">blog post</a> 
                 <p></p>
                 <div class="abstract">
