@@ -204,6 +204,19 @@
             <heading>News</heading>
             <table class="table table-sm table-borderless" style="margin-top: 20px; border-spacing: 20px;">
               <tr>
+                <th scope="row">October 2nd, 2024</th>
+                <td>
+                    The paper we wrote at IBM Research Europe on API integration with LLMs was accepted at <a href="https://2024.emnlp.org/">EMNLP 2024</a> (Industry Track).
+                </td>
+              </tr>
+                <th scope="row">September 26th, 2024</th>
+                <td>
+                    Our paper <em>On Affine Homotopy between Language Encoders </em> was accepted at <a href="https://neurips.cc/">NeurIPS 2024</a>.
+                    I will be presenting it in Vancouver in December.
+                    Thanks to all co-authors!
+                </td>
+              </tr>
+              <tr>
                 <th scope="row">August 12th, 2024</th>
                 <td>
                     We gave a tutorial about the representational capacity of neural language models at <a href="https://2024.aclweb.org/">ACL 2024</a> in Bangkok. 
@@ -249,6 +262,8 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
           <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -259,7 +274,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <papertitle>On Affine Homotopy between Language Encoders</papertitle>
               <br>
-              <strong class="small-font">Robin SM Chan</strong>, 
+              <u class="small-font">Robin SM Chan</u>, 
               <small>Reda Boumasmoud</small>,
               <small>Anej Svete</small>,
               <small>Yuxin Ren</small>,
@@ -271,7 +286,7 @@
               <small>Mennatallah El-Assady</small>,
               <small>Ryan Cotterell</small>
               <br>
-              <em class="small-font">Preprint</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2406.02329">arXiv</a></span>
+              <em class="small-font">Advancements of Neural Information Processing 37 (NeurIPS)</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2406.02329">arXiv</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
                   <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
@@ -287,14 +302,56 @@
                      similarity, it is still informative of extrinsic similarity. We confirm this on datasets of natural language representations. Beyond
                      providing useful bounds on extrinsic similarity, affine intrinsic similarity also allows us to begin uncovering the structure of the
                      space of pre-trained encoders by defining an order over them.
-              </small>
-            </div>
-          </div>
+                  </small>
+                </div>
+              </div>
   
               <p style="text-align: center;"> <strong class="small-font">Language Encoders </strong>&#183;<strong class="small-font"> Metric Spaces </strong>&#183;<strong class="small-font"> Large Language Models</strong></p>
             </td>
           </tr>
       </tbody>
+          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
+                <img src='images/api-integration.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Adapting LLMs for Structured Natural Language API Integration</papertitle>
+              <br>
+              <u class="small-font">Robin SM Chan</u>, 
+              <small>Katsiaryna Mirylenka</small>,
+              <small>Thomas Gschwind</small>,
+              <small>Christoph Miksovic-Czasch</small>,
+              <small>Paolo Scotton</small>,
+              <small>Enrico Toniato</small>,
+              <small>Abdel Labbi</small>
+              <br>
+              <em class="small-font">Proceedings of EMNLP: Industry Track</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://openreview.net/pdf?id=bsZbgmCfnp">arXiv</a></span>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    Integrating APIs is crucial for enterprise systems, enabling seamless application interaction within workflows.
+                    However, the vast and diverse API landscape makes combining calls based on user intent a significant challenge.
+                    Existing methods rely on Named Entity Recognition (NER) and knowledge graphs, but struggle with control flow structures like
+                    conditionals and loops. We propose a novel framework that leverages the success of Large Language Models (LLMs)
+                    in code generation for natural language API integration. Our approach involves fine-tuning an LLM on automatically generated
+                    API flows derived from services' OpenAPI specifications. This aims to surpass NER-based methods and compare the effectiveness
+                    of different tuning strategies. Specifically, we investigate the impact of enforcing syntax through constrained generation or
+                    retrieval-augmented generation. To facilitate systematic comparison, we introduce targeted test suites that assess the generalization
+                    capabilities and ability of these approaches to retain structured knowledge. We expect to observe that fine-tuned LLMs can: (a) learn
+                    structural constraints implicitly during training, and (b) achieve significant improvements in both in-distribution and out-of-distribution
+                    performance.
+                  </small>
+                </div>
+              </div>
+              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> LM Training </strong>&#183;<strong class="small-font"> API Integration</strong></p>
+            </td>
+          </tr>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -308,15 +365,14 @@
               <br>
               <small>Nadav Borenstein</small>,
               <small>Anej Svete</small>,
-              <strong class="small-font">Robin SM Chan</strong>, 
+              <u class="small-font">Robin SM Chan</u>, 
               <small>Josef Valvoda</small>,
               <small>Franz Nowak</small>,
               <small>Isabelle Augenstein</small>,
               <small>Eleanor Chodroff</small>,
               <small>Ryan Cotterell</small>
               <br>
-              <small>Published in </small> 
-              <em class="small-font">Proceedings of ACL, 2024.</em> <span class="small-font">Bangkok, Thailand | </span> <a class="small-font" href="https://arxiv.org/pdf/2406.04289">arXiv</a></span>
+              <em class="small-font">Proceedings of ACL,</em> <span class="small-font"> 2024 |</span> <a class="small-font" href="https://arxiv.org/pdf/2406.04289">arXiv</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
                   <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
@@ -370,11 +426,10 @@
               </a>
               <br>
               <small>Anej Svete</small>,
-              <strong class="small-font">Robin SM Chan</strong>,
+              <u class="small-font">Robin SM Chan</u>,
               <small>Ryan Cotterell</small>
               <br>
-              <small>Published in </small>
-              <em class="small-font"> Findings of ACL</em><span class="small-font">, 2024. Bangkok, Thailand | </span> <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a>
+              <em class="small-font">Findings of ACL</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a>
               <br>
               <!-- <br>
               <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a><span class="small-font"></span>
@@ -409,7 +464,7 @@
           </tr>
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+          <!-- <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
@@ -417,13 +472,12 @@
                 </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/pdf/2405.00708"> -->
                 <papertitle>Interactive Analysis of LLMs using Meaningful Counterfactuals</papertitle>
               </a>
               <br>
               <small>Furui Cheng</small>,
               <small>Vilém Zouhar</small>,
-              <strong class="small-font">Robin SM Chan</strong>,
+              <u class="small-font">Robin SM Chan</u>,
               <small>Daniel Fürst</small>,
               <small>Hendrik Strobelt</small>,
               <small>Mennatallah El-Assady</small>
@@ -432,7 +486,7 @@
               <br>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -453,7 +507,7 @@
             </div>
               <p style="text-align: center;"> <strong class="small-font">Counterfactuals </strong>&#183;<strong class="small-font"> Visual Explainability</strong></p>
             </td>
-          </tr>
+          </tr> -->
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
@@ -468,14 +522,13 @@
                   <papertitle>Which Spurious Correlations Impact Reasoning in NLI Models? A Visual Interactive Diagnosis through Data-Constrained Counterfactuals</papertitle>
                 </a>
                 <br>
-                <strong class="small-font">Robin Chan</strong>,
+                <u class="small-font">Robin Chan</u>,
                 <small>Afra Amini</small>,
                 <small>Mennatallah El-Assady</small>
                 <br>
-                <small>Published in </small><em class="small-font">Proceedings of ACL: System Demonstrations</em><span class="small-font">, 2023. Toronto, Canada | </span>
+                <em class="small-font">Proceedings of ACL: System Demonstrations</em><span class="small-font">, 2023 | </span>
                 <a href="https://arxiv.org/pdf/2306.12146" class="small-font">arXiv</a><small> | </small>
                 <a href="https://dcc-frontend.onrender.com/" class="small-font">blog post</a> 
-                <p></p>
                 <div class="abstract">
                   <div class="abstract-title" onclick="toggleAbstract(event)">
                     <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
