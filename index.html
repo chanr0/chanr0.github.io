@@ -12,12 +12,8 @@
   body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; Hide horizontal scrollbar */
-    background-image: url('images/chanr_photo_background.jpg');
-    background-size: cover; /* Increase the background size by 150% */
-    /* font-family: 'Alegreya'; */
-
-  }
+    background-color: #687f97;
+}
 
   /* Hide content by default */
   #content {
@@ -78,7 +74,7 @@
   /* border-radius: 8px; Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
   padding: 20px; /* Add padding */
-  background-color: #ba9b61b6; /* Add fill color */
+  background-color: #d3d3d3; /* Add fill color */
   max-width: 75%; /* Set maximum width */
   min-width: 25%; /* Set minimum width */
   margin: auto; /* Center horizontally */
@@ -158,14 +154,14 @@
               PhD Student in HCI and NLP @ ETH Zürich
             </p>
             <p style="text-align:center;">
-              <img src="images/chanr_photo.jpg" style="width: 40%; clip-path: ellipse(50% 50% at 50% 50%);">
+              <img src="images/chanr.jpeg" style="width: 150px; height: 160px; border-radius: 50%; object-fit: cover;">
             </p>
             <p style="text-align:center">
               <a href="mailto:robin.chan@inf.ethz.ch">robin.chan@inf.ethz.ch</a>
             </p>
             <p style="text-align:center">
               <a href="https://scholar.google.com/citations?user=x-BfbhEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-              <a href="https://twitter.com/robinsmchan">Twitter</a> &nbsp/&nbsp
+              <a href="https://bsky.app/profile/robinsmchan.bsky.social">Bluesky</a> &nbsp/&nbsp
               <a href="https://www.linkedin.com/in/robin-chan-494a261a3/">LinkedIn</a>
             </p>
 
@@ -175,9 +171,9 @@
               <heading>About Me</heading>
             </p>
             <p style="text-align:justify">
-              I'm a first-year CS PhD student at the <a href="https://inf.ethz.ch/research/visual-computing.html">Institute for Visual Computing</a>
+              I'm a second-year CS PhD student at the <a href="https://inf.ethz.ch/research/visual-computing.html">Institute for Visual Computing</a>
               and the <a href="https://ml.inf.ethz.ch/">Institute for Machine Learning</a> at ETH Zürich.
-              I'm advised by Prof. Menna El-Assady (<a href="https://ivia.ethz.ch/">IVIA</a>).
+              I'm co-advised by Prof. Menna El-Assady at <a href="https://ivia.ethz.ch/">IVIA</a> and Prof. Ryan Cotterell at <a href="https://rycolab.io/">Rycolab</a>.
               Previously, I obtained a master's degree in data science from ETH Zürich,
               graduating with a thesis on LLM program synthesis at <a href="https://www.zurich.ibm.com/">IBM Research Europe (ZRL)</a>.
             </p>
@@ -203,6 +199,21 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <table class="table table-sm table-borderless" style="margin-top: 20px; border-spacing: 20px;">
+              <!-- <tr>
+                <th scope="row">January 18th, 2025</th>
+                <td>
+                    Our paper <em>Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows
+                    </em> was accepted at <a href="https://chi2025.acm.org/">CHI 2025</a> in Yokohama, Japan &mdash;
+                    congratulations to all co-authors!
+                </td>
+              </tr> -->
+              <tr>
+                <th scope="row">December 18th, 2024</th>
+                <td>
+                    Our paper <em>A Design Space for Intelligent Dialogue Augmentation</em> was accepted at <a href="https://iui.acm.org/2025/index.html">ACM IUI 2025</a>!
+                    I will be presenting it in Cagliari in March. Thanks to all co-authors!
+                </td>
+              </tr>
               <tr>
                 <th scope="row">October 2nd, 2024</th>
                 <td>
@@ -266,11 +277,88 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <!-- <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
+                <img src='images/haystacks.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows</papertitle>
+              <br>
+              <small>Moritz Dück*</small>,
+              <small>Steffen Holter*</small>,
+              <u class="small-font">Robin SM Chan</u>, 
+              <small>Rita Sevastjanova</small>,
+              <small>Menna El-Assady</small>
+              <br>
+              <em class="small-font">Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI),  </em> <span class="small-font"> 2025 </span>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> 
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    Preliminary exploration of vast text corpora for generating and validating hypotheses, typical in academic inquiry, requires flexible navigation and rapid validation of claims.
+                    Navigating the corpus by titles, summaries, and abstracts might neglect information, whereas identifying the relevant context-specific claims through in-depth reading is unfeasible with rapidly increasing publication numbers.
+                    Our paper identifies three typical user pathways for hypothesis exploration and operationalizes sentence-based retrieval combined with effective contextualization and provenance tracking in a unified workflow.
+                    We contribute an interface that augments the previously laborious tasks of claim identification and consistency checking using NLP techniques while balancing user control and serendipity.
+                    Use cases, expert interviews, and a user study with 10 participants demonstrate how the proposed workflow enables users to traverse literature corpora in novel and efficient ways.
+                    For the evaluation, we instantiate the tool within two independent domains, providing novel insights into the analysis of political discourse and medical research.
+                  </small>
+                </div>
+              </div>
+  
+              <p style="text-align: center;"> <strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Human-AI Collaboration </strong>&#183;<strong class="small-font"> Language Models</strong></p>
+            </td>
+          </tr> -->
+
+
           <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
-                <img src='images/homotopy.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <img src='images/dialogue-augmentation.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>A Design Space for Intelligent Dialogue Augmentation</papertitle>
+              <br>
+              <u class="small-font">Robin SM Chan</u>, 
+              <small>Anne Marx</small>,
+              <small>Alison Kim</small>,
+              <small>Menna El-Assady</small>
+              <br>
+              <em class="small-font">Proceedings of the 30th International ACM Conference on Intelligent User Interfaces (IUI), </em> <span class="small-font"> 2025 </span>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    The use of intelligent agents in communication is a growing trend aimed at enhancing the efficiency and quality of interactions.
+                    As such, <em>dialogue augmentation systems</em> -- text processing systems that interactively enhance ongoing written or spoken communication -- are gaining significant popularity across domains.
+                    While technical limitations had previously inhibited their real-time usage for effective communication augmentation, recent developments in language processing have improved their capabilities to contribute to dialogue as intelligent, emancipated, and proactive agents.
+                    While other works on dialogue augmentation focus on evaluating design considerations for specific applications of these systems, we lack a unified understanding of the broader design principles that apply to dialogue more generally.
+                    Through a literature review and mixed-methods analysis of 78 existing systems, we iteratively define a comprehensive design space for intelligent dialogue augmentation systems.
+                    To further ground our analysis, we interweave Clark's models of dialogue with concepts in human-AI collaboration and discuss trends in the evolving role of dialogue augmentation systems along five dimensions -- dialogue context, augmentation context, task, interaction, and model.
+                    Based on the identified trends, we discuss concrete challenges for broader adoption, highlighting the need to design <em>trusted</em>, <em>seamless</em>, and <em>timely</em> augmentations.
+                    The design space contributes as a mechanism for researchers to facilitate defining design choices during development, situate their systems in the current landscape of works, and understand opportunities for future research.
+                  </small>
+                </div>
+              </div>
+  
+              <p style="text-align: center;"> <strong class="small-font">Human-AI Collaboration </strong>&#183;<strong class="small-font"> Speech Processing </strong>&#183;<strong class="small-font"> Language Models</strong></p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bakedsdf_image'>
+                <img src='images/homotopy.png'  class="publication-img" width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -285,10 +373,10 @@
               <small>Shauli Ravfogel</small>,
               <small>Mrinmaya Sachan</small>,
               <small>Bernhard Schölkopf</small>,
-              <small>Mennatallah El-Assady</small>,
+              <small>Menna El-Assady</small>,
               <small>Ryan Cotterell</small>
               <br>
-              <em class="small-font">Advances in Neural Information Processing 37 (NeurIPS)</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2406.02329">arXiv</a></span>
+              <em class="small-font">Advances in Neural Information Processing 38 (NeurIPS)</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/86040ae1ecc64655bdbdfbbf774ead26-Paper-Conference.pdf">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
                   <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
@@ -316,7 +404,7 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
-                <img src='images/api-integration.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <img src='images/api-integration.png' class="publication-img" width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -351,7 +439,7 @@
                   </small>
                 </div>
               </div>
-              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> LM Training </strong>&#183;<strong class="small-font"> API Integration</strong></p>
+              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Training </strong>&#183;<strong class="small-font"> API Integration</strong></p>
             </td>
           </tr>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -359,7 +447,7 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
-                <img src='images/nadav.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <img src='images/nadav.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -419,7 +507,7 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bakedsdf_image'>
-                <img src='images/rnn_website.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <img src='images/rnn_website.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -482,7 +570,7 @@
               <u class="small-font">Robin SM Chan</u>,
               <small>Daniel Fürst</small>,
               <small>Hendrik Strobelt</small>,
-              <small>Mennatallah El-Assady</small>
+              <small>Menna El-Assady</small>
               <br>
               <em class="small-font">Preprint</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2405.00708">arXiv</a>
               <br>
@@ -516,7 +604,7 @@
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='bakedsdf_image'>
-                  <img src='images/dcc_website.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                  <img src='images/dcc_website.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
@@ -526,7 +614,7 @@
                 <br>
                 <u class="small-font">Robin Chan</u>,
                 <small>Afra Amini</small>,
-                <small>Mennatallah El-Assady</small>
+                <small>Menna El-Assady</small>
                 <br>
                 <em class="small-font">Proceedings of ACL: System Demonstrations</em><span class="small-font">, 2023 | </span>
                 <a href="https://aclanthology.org/2023.acl-demo.44.pdf" class="small-font">pdf</a><small> | </small>

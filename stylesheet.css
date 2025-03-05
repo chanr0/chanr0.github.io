@@ -66,15 +66,44 @@
 /* Add Spectral font */
 @import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
 
-a {
-  color: #2666a6;
-  text-decoration: none;
-}
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+@media (max-width: 500px) {
+  .publication-img {
+    display: none; /* Hides images in publications */
+  }
+
+
+  /* Prevent horizontal scrolling */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Make tables adapt to full width */
+  table {
+    width: 100% !important;
+    table-layout: fixed; /* Prevents weird spacing issues */
+    border-collapse: collapse; /* Ensures a clean layout */
+  }
+
+  /* Ensure <td> expands properly */
+  td {
+    display: block;
+    width: 100% !important;
+    /* text-align: center; */
+    box-sizing: border-box; /* Prevents content from overflowing */
+    padding: 10px; /* Adds some spacing */
+  }
+
+  /* Fix potential container issues */
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+
 }
 
 body,
@@ -85,6 +114,19 @@ p,
 a {
   font-family: 'Spectral', 'Lato', Verdana, Helvetica, sans-serif; /* Apply Spectral font */
   font-size: 14px;
+  color: #333333; /* Change to your preferred text color */
+
+}
+
+a {
+  color: #2666a6;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
 }
 
 .small-font {
