@@ -1,291 +1,225 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Robin Shing Moon Chan</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-
-
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #687f97;
-}
-
-  /* Hide content by default */
-  #content {
-    display: none;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-  }
-
-  /* Show content when the .animation-finished class is added */
-  #content.animation-finished {
-    display: block;
-  }
-
-  .abstract {
-    margin: 0 0;
-      /* margin: 10px 0; */
-  }
-  .abstract-title {
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-  }
-  .abstract-content {
-      display: none;
-      margin-top: 10px;
-  }
-  .arrow {
-      margin-left: 5px;
-      font-size: 0.8em;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0px;
-  }
-
-  .column {
-    flex: 1;
-    padding: 10px;
-  }
-
-  .column:first-child {
-    margin-right: 20px; /* Add some spacing between columns */
-  }
-
-  .social-links a {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  #card {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  /* border: 1px solid #534545; Add border */
-  /* border-radius: 8px; Add border radius for rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-  padding: 20px; /* Add padding */
-  background-color: #d3d3d3; /* Add fill color */
-  max-width: 75%; /* Set maximum width */
-  min-width: 25%; /* Set minimum width */
-  margin: auto; /* Center horizontally */
-}
-
-  /* Media Query for smaller screens */
-  @media (max-width: 768px) {
-      #container {
-          height: auto;
-      }
-      /* Hide content by default */
-      #content {
-        display: none;
-        opacity: 0; /* Initially set opacity to 0 */
-        animation: fadeIn 1s ease forwards; /* Smooth fade-in animation */
-      }
-      .container {
-          flex-direction: column;
-          align-items: center;
-      }
-      .column {
-          padding: 10px;
-          text-align: center;
-      }
-      .column:first-child {
-          margin-right: 0;
-      }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-      0% {
-          opacity: 1;
-      }
-      100% {
-          opacity: 0;
-      }
-  }
-</style>
-
-  <title>Robin Chan</title>
-  
-  <meta name="author" content="Robin Chan">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name="author" content="Robin Chan">
+  <title>Robin Shing Moon Chan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌚</text></svg>">
-</head> 
-
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌚</text></svg>">
 </head>
 <body>
-  <div id="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    <!-- <img src="images/chanr_photo.jpg" alt="Moving Picture" style="width: 300px; clip-path: ellipse(50% 50% at 50% 50%) ;"> -->
-  </div>
-
-  <div id="content">
-    <div id="card">
-
-      <!-- <table><tbody> -->
-    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <div id="content" class="content-card">
+    <div class="card">
+      <div id="top"></div>
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Primary">
+          <a class="site-nav__brand" href="#top"><span class="name-highlight">Robin</span> Shing Moon Chan <span class="site-nav__brand--local">(陳承滿)</span></a>
+          <div class="site-nav__links">
+            <a href="#about" class="site-nav__link">About</a>
+            <a href="#news" class="site-nav__link">News</a>
+            <a href="#publications" class="site-nav__link">Publications</a>
+            <!-- <a href="#contact" class="site-nav__link">Contact</a> -->
+          </div>
+        </nav>
+      </header>
+      <table class="layout-table">
+        <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-        <div class="container">
-          <div class="column">
-            <p style="text-align:center">
-              <name><u>Robin</u> Shing Moon Chan</name>
-            </p>
-            <p style="text-align:center; color: rgb(77, 77, 77)">
-              PhD Student in HCI and NLP @ ETH Zürich
-            </p>
-            <p style="text-align:center;">
-              <img src="images/chanr.jpeg" style="width: 150px; height: 160px; border-radius: 50%; object-fit: cover;">
-            </p>
-            <p style="text-align:center">
-              <a href="mailto:robin.chan@inf.ethz.ch">robin.chan@inf.ethz.ch</a>
-            </p>
-            <p style="text-align:center">
-              <a href="https://scholar.google.com/citations?user=x-BfbhEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-              <a href="https://bsky.app/profile/robinsmchan.bsky.social">Bluesky</a> &nbsp/&nbsp
-              <a href="https://www.linkedin.com/in/robin-chan-494a261a3/">LinkedIn</a>
-            </p>
-
-          </div>
-          <div class="column">
-            <p style="text-align:justify">
-              <heading>About Me</heading>
-            </p>
-            <p style="text-align:justify">
-              I'm a second-year CS PhD student at the <a href="https://inf.ethz.ch/research/visual-computing.html">Institute for Visual Computing</a>
-              and the <a href="https://ml.inf.ethz.ch/">Institute for Machine Learning</a> at ETH Zürich.
-              I'm co-advised by Prof. Menna El-Assady at <a href="https://ivia.ethz.ch/">IVIA</a> and Prof. Ryan Cotterell at <a href="https://rycolab.io/">Rycolab</a>.
-              Previously, I obtained a master's degree in data science from ETH Zürich,
-              graduating with a thesis on LLM code generation at <a href="https://www.zurich.ibm.com/">IBM Research Europe (ZRL)</a>.
-            </p>
-            <p style="text-align:justify">
-              My main research interest lies at the intersection of human-computer interaction and natural language processing.
-              More concretely, I want to better understand how to make humans and LLMs interact more effectively.
-              If you're interested in similar topics, don't hesitate to message me.
-            </p>
-            <p style="text-align: justify;">
-              <strong>Personal bits:</strong> some of my favorite books: [<a href="https://www.goodreads.com/book/show/9402073-tauben-fliegen-auf">1</a>,
-              <a href="https://www.goodreads.com/book/show/406235.Giovanni_s_Room?from_search=true&from_srp=true&qid=rEcFQz1BK6&rank=1">2</a>,
-              <a href="https://www.goodreads.com/book/show/36809135-where-the-crawdads-sing">3</a>],
-              some of my favorite movies: [<a href="https://www.imdb.com/title/tt0113247/?ref_=nv_sr_srsg_1_tt_6_nm_1_q_la%2520haine">1</a>,
-              <a href="https://www.imdb.com/title/tt27503384/">2</a>, <a href="https://www.imdb.com/title/tt4975722/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_moonlight">3</a>].
-              I like making music
-              [<a href="https://github.com/chanr0/chanr0.github.io/blob/main/images/singing.jpg?raw=true">me Christmas caroling with friends</a>].
-            </p>
+        <div class="page-columns">
+          <aside class="profile-column">
+            <div class="profile-card" id="contact">
+              <p class="portrait">
+                <img src="images/chanr.jpeg" class="portrait-image" alt="Portrait of Robin Chan">
+              </p>
+              <p class="subtitle">PhD Student @ ETH Zürich</p>
+              <p class="contact">
+                <a href="mailto:robin.chan@inf.ethz.ch">robin.chan@inf.ethz.ch</a>
+              </p>
+              <div class="contact-links">
+                <a href="https://scholar.google.com/citations?user=x-BfbhEAAAAJ&hl=en">Google Scholar</a>
+                <span class="contact-divider" aria-hidden="true">/</span>
+                <a href="https://bsky.app/profile/robinsmchan.bsky.social">Bluesky</a>
+                <!-- <span class="contact-divider" aria-hidden="true">/</span>
+                <a href="https://www.linkedin.com/in/robin-chan-494a261a3/">LinkedIn</a> -->
+              </div>
+            </div>
+          </aside>
+          <div class="main-column">
+            <section id="about" class="about-section">
+              <p>
+                I'm a PhD student at the <a href="https://ml.inf.ethz.ch/">Institute for Machine Learning</a> at ETH Zürich, where I'm advised by Prof. Menna El-Assady at <a href="https://ivia.ethz.ch/">IVIA</a> and Prof. Ryan Cotterell at <a href="https://rycolab.io/">Rycolab</a>.
+                My research focuses on inference-time language model control, integrating methods from probabilistic inference and human-computer interaction.
+                I'm quite active in the <a href="https://genlm.org/">GenLM</a> research consortium, where we are building an open-source ecosystem for language model probabilistic programming.
+                Before that, I obtained a master's degree in data science from ETH Zürich, graduating with a thesis on controlled LLM code generation at <a href="https://www.zurich.ibm.com/">IBM Research Europe (ZRL)</a>.
+              </p>
+              <p>
+                <strong>Personal bits:</strong> some of my favorite books: [<a href="https://www.goodreads.com/book/show/9402073-tauben-fliegen-auf">1</a>,
+                <a href="https://www.goodreads.com/book/show/406235.Giovanni_s_Room?from_search=true&from_srp=true&qid=rEcFQz1BK6&rank=1">2</a>,
+                <a href="https://www.goodreads.com/book/show/36809135-where-the-crawdads-sing">3</a>],
+                some of my favorite movies: [<a href="https://www.imdb.com/title/tt0113247/?ref_=nv_sr_srsg_1_tt_6_nm_1_q_la%2520haine">1</a>,
+                <a href="https://www.imdb.com/title/tt27503384/">2</a>, <a href="https://www.imdb.com/title/tt4975722/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_moonlight">3</a>].
+                I like making music
+                [<a href="https://github.com/chanr0/chanr0.github.io/blob/main/images/singing.jpg?raw=true">me Christmas caroling with friends</a>].
+              </p>
+            </section>
           </div>
         </div>
-      
-        <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:96px;" id="news-table"><tbody>
           <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>News</heading>
-            <table class="table table-sm table-borderless" style="margin-top: 20px; border-spacing: 20px;">
-              <tr>
-                <th scope="row">March 26th, 2025</th>
-                <td>
-                    Our paper <em>Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows
-                    </em> was accepted at <a href="https://chi2025.acm.org/">CHI 2025</a> in Yokohama, Japan &mdash;
-                    congratulations to the team!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">December 18th, 2024</th>
-                <td>
-                    Our paper <em>A Design Space for Intelligent Dialogue Augmentation</em> was accepted at <a href="https://iui.acm.org/2025/index.html">ACM IUI 2025</a>!
-                    I will be presenting it in Cagliari in March. Thanks to all co-authors!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">October 2nd, 2024</th>
-                <td>
-                    The paper we wrote at IBM Research on API integration with LLMs was accepted at <a href="https://2024.emnlp.org/">EMNLP 2024</a> (Industry Track)
-                    &mdash; thanks to all co-authors!
-                    My colleague Thomas Gschwind from IBM Research will be presenting it in Miami in November.
-                </td>
-              </tr>
-                <th scope="row">September 26th, 2024</th>
-                <td>
-                    Our paper <em>On Affine Homotopy between Language Encoders </em> was accepted at <a href="https://neurips.cc/">NeurIPS 2024</a>.
-                    I will be presenting it in Vancouver in December.
-                    Thanks to all co-authors!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">August 12th, 2024</th>
-                <td>
-                    We gave a tutorial about the representational capacity of neural language models at <a href="https://2024.aclweb.org/">ACL 2024</a> in Bangkok. 
-                    Check out our <a href="https://acl2024.ivia.ch/">interactive tutorial webpage</a>!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">May 27th, 2024</th>
-                <td>
-                    Two papers I co-authored were accepted at <a href="https://2024.aclweb.org/">ACL 2024</a>! 
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">March 1st, 2024</th>
-                <td>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+          <h2 id="news" class="section-heading">News</h2>
+            <section class="news-panel" aria-label="Latest news">
+              <div class="news-list" role="list">
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2025-10">October 2025</time>
+                  <p class="news-summary">
+                    I got an outstanding reviewer award (top 8% of reviewers) at NeurIPS'25 🏆 
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2025-09">September 2025</time>
+                  <p class="news-summary">
+                    I presented at the <a href="https://genlm.org/">GenLM</a> onsite event at MIT Department of Brain and Cognitive Sciences in Boston.
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2025-07">July 2025</time>
+                  <p class="news-summary">
+                    One paper accepted at <a href="https://ieeevis.org/year/2025/welcome">IEEE VIS 2025</a> in Vienna — congratulations to the team!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2025-03">March 2025</time>
+                  <p class="news-summary">
+                    Our paper <em>Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows</em> was accepted at <a href="https://chi2025.acm.org/">CHI 2025</a> in Yokohama, Japan — congratulations to the team!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-12">December 2024</time>
+                  <p class="news-summary">
+                    Our paper <em>A Design Space for Intelligent Dialogue Augmentation</em> was accepted at <a href="https://iui.acm.org/2025/index.html">ACM IUI 2025</a>! I will be presenting it in Cagliari in March. Thanks to all co-authors!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-10">October 2024</time>
+                  <p class="news-summary">
+                    The paper we wrote at IBM Research on API integration with LLMs was accepted at <a href="https://2024.emnlp.org/">EMNLP 2024</a> (Industry Track) — thanks to all co-authors! My colleague Thomas Gschwind from IBM Research will be presenting it in Miami in November.
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-09">September 2024</time>
+                  <p class="news-summary">
+                    Our paper <em>On Affine Homotopy between Language Encoders</em> was accepted at <a href="https://neurips.cc/">NeurIPS 2024</a>. I will be presenting it in Vancouver in December. Thanks to all co-authors!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-08">August 2024</time>
+                  <p class="news-summary">
+                    We gave a tutorial about the representational capacity of neural language models at <a href="https://2024.aclweb.org/">ACL 2024</a> in Bangkok. Check out our <a href="https://acl2024.ivia.ch/">interactive tutorial webpage</a>!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-05">May 2024</time>
+                  <p class="news-summary">
+                    Two papers I co-authored were accepted at <a href="https://2024.aclweb.org/">ACL 2024</a>!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2024-03">March 2024</time>
+                  <p class="news-summary">
                     Started a PhD at ETH Zürich, co-advised by Prof. Menna El-Assady and Prof. Ryan Cotterell! 🎉
-                </td>
-            </tr>
-              <tr>
-                  <th scope="row">September 26th, 2023</th>
-                  <td>
-                      Together with Katya Mirylenka, we will give a talk at <a href="https://zurich-nlp.ch/">Zurich-NLP</a> about our work at IBM Research, at the ETH AI Center.
-                      RSVP <a href="https://zurich-nlp.ch/events/">here</a>! 
-                  </td>
-              </tr>
-              <tr>
-                  <th scope="row">July 9th, 2023</th>
-                  <td>
-                      Our paper on counterfactual sample generation was accepted at <a href="https://2023.aclweb.org/">ACL</a>. I will be presenting it in Toronto in a few days!
-                      Check out our <a href="https://dcc-frontend.onrender.com/">blog post</a> about the paper!
-                  </td>
-              </tr>
-          </table>
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2023-09">September 2023</time>
+                  <p class="news-summary">
+                    Together with Katya Mirylenka, we will give a talk at <a href="https://zurich-nlp.ch/">Zurich-NLP</a> about our work at IBM Research, at the ETH AI Center. RSVP <a href="https://zurich-nlp.ch/events/">here</a>!
+                  </p>
+                </article>
+                <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2023-07">July 2023</time>
+                  <p class="news-summary">
+                    Our paper on counterfactual sample generation was accepted at <a href="https://2023.aclweb.org/">ACL</a>. I will be presenting it in Toronto in a few days! Check out our <a href="https://dcc-frontend.onrender.com/">blog post</a> about the paper!
+                  </p>
+                </article>
+              </div>
+              <div class="news-footer">
+                <p class="news-tip">Scroll or swipe for more updates</p>
+              </div>
+            </section>
           </td>
         </tr>
       </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:96px;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
+              <h2 id="publications" class="section-heading">Publications</h2>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+       <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/haystacks.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                  <img src="images/llm-analyzer.png" width="100%" class="publication-img" alt="Screenshot of the LLM Analyzer project">
+                </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <h3 class="paper-title">Understanding Large Language Model Behaviors through Interactive Counterfactual Generation and Analysis</h3>
+              <br>
+              <small>Furui Cheng</small>,
+              <small>Vilém Zouhar</small>,
+              <u class="small-font">Robin SM Chan</u>,
+              <small>Daniel Fürst</small>,
+              <small>Hendrik Strobelt</small>,
+              <small>Menna El-Assady</small>
+              <br>
+              <em class="small-font">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS'25) </em><span class="small-font">, 2025 | </span> <a class="small-font" href="https://www.semanticscholar.org/reader/2b253bfc97d3617c52201153c6d2191503ab98e4">pdf</a>
+              <br>
+              <div class="abstract">
+                <div class="abstract-title" onclick="toggleAbstract(event)">
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
+                </div>
+                <div class="abstract-content">
+                  <small>
+                    Counterfactual examples are useful for exploring the decision boundaries of machine learning models and determining
+                      feature attributions. How can we apply counterfactual-based methods to analyze and explain LLMs? We identify the following key
+                      challenges. First, the generated textual counterfactuals should be meaningful and readable to users and thus can be mentally compared
+                      to draw conclusions. Second, to make the solution scalable to long-form text, users should be equipped with tools to create batches of
+                      counterfactuals from perturbations at various granularity levels and interactively analyze the results. In this paper, we tackle the above
+                      challenges and contribute 1&#41; a novel algorithm for generating batches of complete and meaningful textual counterfactuals by removing
+                      and replacing text segments in different granularities, and 2&#41; LLM Analyzer, an interactive visualization tool to help users understand
+                      an LLM's behaviors by interactively inspecting and aggregating meaningful counterfactuals. We evaluate the proposed algorithm by
+                      the grammatical correctness of its generated counterfactuals using 1,000 samples from medical, legal, finance, education, and news
+                      datasets. In our experiments, 97.2% of the counterfactuals are grammatically correct. Through a use case, user studies, and feedback
+                      from experts, we demonstrate the usefulness and usability of the proposed interactive visualization tool
+                    </small>
+                  </small>
+              </div>
+            </div>
+              <p class="publication-tags"><strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Language Model Explainability</strong></p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two">
+                <img src="images/haystacks.png" width="100%" class="publication-img" alt="Screenshot of the Document Haystacks project">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows</papertitle>
+                <h3 class="paper-title">Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows</h3>
               <br>
               <small>Moritz Dück</small>,
               <small>Steffen Holter</small>,
@@ -293,10 +227,10 @@
               <small>Rita Sevastjanova</small>,
               <small>Menna El-Assady</small>
               <br>
-              <em class="small-font">Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI),  </em> <span class="small-font"> 2025 </span>
+              <em class="small-font">Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI),  </em> <span class="small-font"> 2025 | </span> <a class="small-font" href="https://dl.acm.org/doi/pdf/10.1145/3706598.3713715">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> 
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small> 
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -310,30 +244,30 @@
                 </div>
               </div>
   
-              <p style="text-align: center;"> <strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Human-AI Collaboration </strong>&#183;<strong class="small-font"> Language Models</strong></p>
+              <p class="publication-tags"><strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Language Models</strong></p>
             </td>
           </tr>
 
 
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+          <!-- <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/dialogue-augmentation.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                <img src="images/dialogue-augmentation.png" width="100%" class="publication-img" alt="Poster for the Dialogue Augmentation project">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>A Design Space for Intelligent Dialogue Augmentation</papertitle>
+                <h3 class="paper-title">A Design Space for Intelligent Dialogue Augmentation</h3>
               <br>
               <u class="small-font">Robin SM Chan</u>, 
               <small>Anne Marx</small>,
               <small>Alison Kim</small>,
               <small>Menna El-Assady</small>
               <br>
-              <em class="small-font">Proceedings of the 30th International ACM Conference on Intelligent User Interfaces (IUI), </em> <span class="small-font"> 2025 </span>
+              <em class="small-font">Proceedings of the 30th International ACM Conference on Intelligent User Interfaces (IUI), </em> <span class="small-font"> 2025 | </span> <a class="small-font" href="https://dl.acm.org/doi/pdf/10.1145/3708359.3712096">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -349,20 +283,20 @@
                 </div>
               </div>
   
-              <p style="text-align: center;"> <strong class="small-font">Human-AI Collaboration </strong>&#183;<strong class="small-font"> Speech Processing </strong>&#183;<strong class="small-font"> Language Models</strong></p>
+              <p class="publication-tags"><strong class="small-font">Human-AI Collaboration </strong>&#183;<strong class="small-font"> Speech Processing </strong>&#183;<strong class="small-font"> Language Models</strong></p>
             </td>
-          </tr>
+          </tr> -->
 
 
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/homotopy.png'  class="publication-img" width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                <img src="images/homotopy.png"  class="publication-img" width="100%" alt="Diagram illustrating affine homotopy between language encoders">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>On Affine Homotopy between Language Encoders</papertitle>
+                <h3 class="paper-title">On Affine Homotopy between Language Encoders</h3>
               <br>
               <u class="small-font">Robin SM Chan</u>, 
               <small>Reda Boumasmoud</small>,
@@ -379,7 +313,7 @@
               <em class="small-font">Advances in Neural Information Processing 38 (NeurIPS)</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/86040ae1ecc64655bdbdfbbf774ead26-Paper-Conference.pdf">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -396,19 +330,19 @@
                 </div>
               </div>
   
-              <p style="text-align: center;"> <strong class="small-font">Language Encoders </strong>&#183;<strong class="small-font"> Metric Spaces </strong>&#183;<strong class="small-font"> Large Language Models</strong></p>
+              <p class="publication-tags"><strong class="small-font">Representational Similarity </strong>&#183;<strong class="small-font"> Language Encoders</strong></p>
             </td>
           </tr>
       </tbody>
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/api-integration.png' class="publication-img" width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                <img src="images/api-integration.png" class="publication-img" width="100%" alt="Illustration for adapting LLMs for API integration">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Adapting LLMs for Structured Natural Language API Integration</papertitle>
+                <h3 class="paper-title">Adapting LLMs for Structured Natural Language API Integration</h3>
               <br>
               <u class="small-font">Robin SM Chan</u>, 
               <small>Katsiaryna Mirylenka</small>,
@@ -421,7 +355,7 @@
               <em class="small-font">Proceedings of EMNLP: Industry Track</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://aclanthology.org/2024.emnlp-industry.74.pdf">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -439,19 +373,19 @@
                   </small>
                 </div>
               </div>
-              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Training </strong>&#183;<strong class="small-font"> API Integration</strong></p>
+              <p class="publication-tags"><strong class="small-font">Language Model Control </strong>&#183;<strong class="small-font"> Parameter-Efficient Fine-Tuning </strong></p>
             </td>
           </tr>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/nadav.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                <img src="images/nadav.png" width="100%" class="publication-img" alt="Diagram for probabilistic regular languages">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>What Languages are Easy to Language-Model? A Perspective from Learning Probabilistic Regular Languages</papertitle>
+                <h3 class="paper-title">What Languages are Easy to Language-Model? A Perspective from Learning Probabilistic Regular Languages</h3>
               <br>
               <small>Nadav Borenstein</small>,
               <small>Anej Svete</small>,
@@ -465,7 +399,7 @@
               <em class="small-font">Proceedings of ACL,</em> <span class="small-font"> 2024 |</span> <a class="small-font" href="https://aclanthology.org/2024.acl-long.807.pdf">pdf</a></span>
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -497,23 +431,21 @@
             </div>
           </div>
   
-              <p style="text-align: center;"> <strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
+              <p class="publication-tags"><strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
             </td>
           </tr>
       </tbody>
   
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                <img src='images/rnn_website.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                <div class="two">
+                <img src="images/rnn_website.png" width="100%" class="publication-img" alt="Graphic for representing regular languages as RNNs">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/pdf/2402.15814.pdf"> -->
-                <papertitle>On Efficiently Representing Regular Languages as RNNs</papertitle>
-              </a>
+              <h3 class="paper-title">On Efficiently Representing Regular Languages as RNNs</h3>
               <br>
               <small>Anej Svete</small>,
               <u class="small-font">Robin SM Chan</u>,
@@ -526,7 +458,7 @@
               <br> -->
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                 </div>
                 <div class="abstract-content">
                   <small>
@@ -549,68 +481,23 @@
                   </small>
               </div>
             </div>
-              <p style="text-align: center;"> <strong class="small-font">Language Model Expressivity </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
+              <p class="publication-tags"><strong class="small-font">Language Model Expressivity </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p>
             </td>
           </tr>
       </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <!-- <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='bakedsdf_image'>
-                  <img src='images/llm-analyzer.png' width="100%" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
-                </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Interactive Analysis of LLMs using Meaningful Counterfactuals</papertitle>
-              </a>
-              <br>
-              <small>Furui Cheng</small>,
-              <small>Vilém Zouhar</small>,
-              <u class="small-font">Robin SM Chan</u>,
-              <small>Daniel Fürst</small>,
-              <small>Hendrik Strobelt</small>,
-              <small>Menna El-Assady</small>
-              <br>
-              <em class="small-font">Preprint</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://arxiv.org/pdf/2405.00708">arXiv</a>
-              <br>
-              <div class="abstract">
-                <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small>
-                </div>
-                <div class="abstract-content">
-                  <small>
-                    Counterfactual examples are useful for exploring the decision boundaries of machine learning models and determining
-                      feature attributions. How can we apply counterfactual-based methods to analyze and explain LLMs? We identify the following key
-                      challenges. First, the generated textual counterfactuals should be meaningful and readable to users and thus can be mentally compared
-                      to draw conclusions. Second, to make the solution scalable to long-form text, users should be equipped with tools to create batches of
-                      counterfactuals from perturbations at various granularity levels and interactively analyze the results. In this paper, we tackle the above
-                      challenges and contribute 1&#41; a novel algorithm for generating batches of complete and meaningful textual counterfactuals by removing
-                      and replacing text segments in different granularities, and 2&#41; LLM Analyzer, an interactive visualization tool to help users understand
-                      an LLM's behaviors by interactively inspecting and aggregating meaningful counterfactuals. We evaluate the proposed algorithm by
-                      the grammatical correctness of its generated counterfactuals using 1,000 samples from medical, legal, finance, education, and news
-                      datasets. In our experiments, 97.2% of the counterfactuals are grammatically correct. Through a use case, user studies, and feedback
-                      from experts, we demonstrate the usefulness and usability of the proposed interactive visualization tool
-                    </small>
-                  </small>
-              </div>
-            </div>
-              <p style="text-align: center;"> <strong class="small-font">Counterfactuals </strong>&#183;<strong class="small-font"> Visual Explainability</strong></p>
-            </td>
-          </tr> -->
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
       </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='bakedsdf_image'>
-                  <img src='images/dcc_website.png' width="100%" class="publication-img" style="opacity:0.6; border: 2px solid #00000063; border-radius: 5px;">
+                  <div class="two">
+                  <img src="images/dcc_website.png" width="100%" class="publication-img" alt="Screenshot of the Data-Constrained Counterfactuals project">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <!-- <a href="https://aclanthology.org/2023.acl-demo.44/"> -->
-                  <papertitle>Which Spurious Correlations Impact Reasoning in NLI Models? A Visual Interactive Diagnosis through Data-Constrained Counterfactuals</papertitle>
-                </a>
+                  <h3 class="paper-title">Which Spurious Correlations Impact Reasoning in NLI Models? A Visual Interactive Diagnosis through Data-Constrained Counterfactuals</h3>
                 <br>
                 <u class="small-font">Robin Chan</u>,
                 <small>Afra Amini</small>,
@@ -621,7 +508,7 @@
                 <a href="https://dcc-frontend.onrender.com/" class="small-font">blog post</a> 
                 <div class="abstract">
                   <div class="abstract-title" onclick="toggleAbstract(event)">
-                    <small>Abstract <i id="abstractArrow" class="fas fa-chevron-down arrow"></i></small> <!-- Downward facing arrow icon -->
+                    <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
                   </div>
                 <div class="abstract-content">
                   <small>
@@ -634,21 +521,24 @@
                   </small>
                 </div>
                 </div>
-                <p style="text-align: center;"> <strong class="small-font">Counterfactuals </strong>&#183;<strong class="small-font"> Mixed-Initiative Learning </strong>&#183;<strong class="small-font"> Language Model Biases</strong></p>
+                <p class="publication-tags"><strong class="small-font">Counterfactuals </strong>&#183;<strong class="small-font"> Mixed-Initiative Learning </strong>&#183;<strong class="small-font"> Language Model Biases</strong></p>
               </td>
             </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
-              <p style="text-align:right;font-size:small;">
+              <p class="footer-note">
                 <a href="https://github.com/jonbarron/jonbarron_website">Website source</a>. Consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
               </p>
             </td>
           </tr>
         </tbody>
       </table>
+  
+          </div>
+        </div>
   
       </td>
     </tr>
@@ -665,29 +555,22 @@
 
   <script>
     function toggleAbstract(event) {
-        var titleElement = event.currentTarget;
-        var contentElement = titleElement.nextElementSibling;
-        var arrowElement = titleElement.querySelector('.arrow');
+      var titleElement = event.currentTarget;
+      var contentElement = titleElement.nextElementSibling;
+      var arrowElement = titleElement.querySelector('.arrow');
 
-        if (contentElement.style.display === "none" || contentElement.style.display === "") {
-            contentElement.style.display = "block";
-            arrowElement.className = "fas fa-chevron-up arrow"; // Upward facing arrow icon
-        } else {
-            contentElement.style.display = "none";
-            arrowElement.className = "fas fa-chevron-down arrow"; // Downward facing arrow icon
-        }
+      if (contentElement.style.display === 'none' || contentElement.style.display === '') {
+        contentElement.style.display = 'block';
+        arrowElement.className = 'fas fa-chevron-up arrow';
+      } else {
+        contentElement.style.display = 'none';
+        arrowElement.className = 'fas fa-chevron-down arrow';
       }
-    window.onload = function() {
-    var container = document.getElementById('container');
-    container.style.animation = 'fadeOut 0s forwards';
-    container.style.animationDelay = '0.2s'; // Add a delay of 0.5 seconds
+    }
 
-    // Add animation-finished class to #content after animation ends
-    container.addEventListener('animationend', function() {
-      var content = document.getElementById('content');
-      content.classList.add('animation-finished');
+    window.addEventListener('load', function () {
+      document.body.classList.add('is-loaded');
     });
-  };
   </script>
 
 
