@@ -18,12 +18,6 @@
       <header class="site-header">
         <nav class="site-nav" aria-label="Primary">
           <a class="site-nav__brand" href="#top"><span class="name-highlight">Robin</span> Shing Moon Chan <span class="site-nav__brand--local">(陳承滿)</span></a>
-          <div class="site-nav__links">
-            <a href="#about" class="site-nav__link">About</a>
-            <a href="#news" class="site-nav__link">News</a>
-            <a href="#publications" class="site-nav__link">Publications</a>
-            <!-- <a href="#contact" class="site-nav__link">Contact</a> -->
-          </div>
         </nav>
       </header>
       <table class="layout-table">
@@ -73,14 +67,22 @@
         <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:96px;" id="news-table"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
+              <div class="news-attending-grid">
+                <div class="news-column">
           <h2 id="news" class="section-heading">News</h2>
             <section class="news-panel" aria-label="Latest news">
               <div class="news-list" role="list">
+                <!-- <article class="news-item" role="listitem">
+                  <time class="news-date" datetime="2026-02">February 2026</time>
+                  <p class="news-summary">
+                    New preprint about ensembling language model with sequential Monte Carlo with the people at GenLM!
+                  </p>
+                </article> -->
                 <article class="news-item" role="listitem">
                   <time class="news-date" datetime="2025-10">January 2026</time>
                   <p class="news-summary">
-                    One first-authored paper about interactive ambiguity resolution in natural language interfaces was conditionally accepted at <a href="https://chi2026.acm.org/">CHI 2026</a> (main track).
-                    Thanks to the team; preprint coming soon!
+                    One paper about interactive ambiguity resolution in natural language interfaces was accepted at <a href="https://chi2026.acm.org/">CHI 2026</a> (main).
+                    Thanks to the team; preprint available <a href="https://arxiv.org/abs/2603.01795">here</a>!
                   </p>
                 </article>
                 <article class="news-item" role="listitem">
@@ -150,70 +152,202 @@
                   </p>
                 </article>
               </div>
-              <div class="news-footer">
-                <p class="news-tip">Scroll or swipe for more updates</p>
-              </div>
             </section>
+                </div>
+                <div class="attending-column">
+                  <h2 id="attending" class="section-heading">Attending</h2>
+                  <section class="attending-panel" aria-label="Upcoming conferences and events">
+                    <div class="attending-list" role="list">
+                      <article class="attending-item attending-entry" data-event-date="2026-04-01" role="listitem">
+                        <time class="news-date" datetime="2026-04">April 2026</time>
+                        <p class="news-summary">
+                          CHI 2026, Barcelona
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2026-01-15" role="listitem">
+                        <time class="news-date" datetime="2026-01">January 2026</time>
+                        <p class="news-summary">
+                          CHI-FRO/GenLM Onsite, Boston
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2026-01-20" role="listitem">
+                        <time class="news-date" datetime="2026-01">January 2026</time>
+                        <p class="news-summary">
+                          SwissCHI, Lausanne
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2025-09-15" role="listitem">
+                        <time class="news-date" datetime="2025-09">September 2025</time>
+                        <p class="news-summary">
+                          GenLM Onsite, Boston
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2025-09-15" role="listitem">
+                        <time class="news-date" datetime="2025-04">April 2025</time>
+                        <p class="news-summary">
+                          COLT Lab, Barcelona
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2025-09-15" role="listitem">
+                        <time class="news-date" datetime="2025-03">March 2025</time>
+                        <p class="news-summary">
+                          IUI, Cagliari
+                        </p>
+                      </article>
+                      <article class="attending-item attending-entry" data-event-date="2025-09-15" role="listitem">
+                        <time class="news-date" datetime="2024-12">December 2024</time>
+                        <p class="news-summary">
+                          NeurIPS, Vancouver
+                        </p>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+              </div>
           </td>
         </tr>
       </tbody></table>
 
       <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:96px;"><tbody>
         <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <h2 id="publications" class="section-heading">Publications</h2>
+        <td style="padding:20px 20px 0;width:100%;vertical-align:middle">
+          <div class="section-heading-row">
+            <h2 id="publications" class="section-heading">Selected Publications</h2>
+            <p class="section-subnote">for a complete list, see <a href="https://scholar.google.com/citations?user=x-BfbhEAAAAJ&hl=en">Google Scholar</a>.</p>
+          </div>
         </td>
       </tr>
     </table>
 
-        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-       <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two">
-                  <img src="images/llm-analyzer.png" width="100%" class="publication-img" alt="Screenshot of the LLM Analyzer project">
-                </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <h3 class="paper-title">Understanding Large Language Model Behaviors through Interactive Counterfactual Generation and Analysis</h3>
-              <br>
-              <small>Furui Cheng</small>,
-              <small>Vilém Zouhar</small>,
-              <u class="small-font">Robin SM Chan</u>,
-              <small>Daniel Fürst</small>,
-              <small>Hendrik Strobelt</small>,
-              <small>Menna El-Assady</small>
-              <br>
-              <em class="small-font">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS'25) </em><span class="small-font">, 2025 | </span> <a class="small-font" href="https://www.semanticscholar.org/reader/2b253bfc97d3617c52201153c6d2191503ab98e4">pdf</a>
-              <br>
-              <div class="abstract">
-                <div class="abstract-title" onclick="toggleAbstract(event)">
-                  <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
-                </div>
-                <div class="abstract-content">
-                  <small>
-                    Counterfactual examples are useful for exploring the decision boundaries of machine learning models and determining
-                      feature attributions. How can we apply counterfactual-based methods to analyze and explain LLMs? We identify the following key
-                      challenges. First, the generated textual counterfactuals should be meaningful and readable to users and thus can be mentally compared
-                      to draw conclusions. Second, to make the solution scalable to long-form text, users should be equipped with tools to create batches of
-                      counterfactuals from perturbations at various granularity levels and interactively analyze the results. In this paper, we tackle the above
-                      challenges and contribute 1&#41; a novel algorithm for generating batches of complete and meaningful textual counterfactuals by removing
-                      and replacing text segments in different granularities, and 2&#41; LLM Analyzer, an interactive visualization tool to help users understand
-                      an LLM's behaviors by interactively inspecting and aggregating meaningful counterfactuals. We evaluate the proposed algorithm by
-                      the grammatical correctness of its generated counterfactuals using 1,000 samples from medical, legal, finance, education, and news
-                      datasets. In our experiments, 97.2% of the counterfactuals are grammatically correct. Through a use case, user studies, and feedback
-                      from experts, we demonstrate the usefulness and usability of the proposed interactive visualization tool
-                    </small>
-                  </small>
-              </div>
-            </div>
-              <!-- <p class="publication-tags"><strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Language Model Explainability</strong></p> -->
-            </td>
-          </tr>
-        </table>
+    <!-- <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+           <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+               <div class="two">
+                 <img src="images/ensembling.png" width="100%" class="publication-img" alt="Screenshot of the LLM Analyzer project">
+               </div>
+           </td>
+           <td style="padding:20px;width:75%;vertical-align:middle">
+               <h3 class="paper-title">Ensembling Language Models with Sequential Monte Carlo</h3>
+             <br>
+             <u class="small-font">Robin Chan</u>,
+             <small>Tianyu Liu</small>,
+             <small>Samuel Kiegeland</small>,
+             <small>Clemente Pasti</small>,
+             <small>Jacob Hoover Vigly</small>,
+             <small>Timothy J. O'Donnell</small>,
+             <small>Ryan Cotterell</small>,
+             <small>Tim Vieira</small>
+             <br>
+             <em class="small-font">Preprint</em><span class="small-font">, 2026 | </span> <a class="small-font" href="https://arxiv.org/abs/2602.14447">pdf</a>
+             <br>
+             <div class="abstract">
+               <div class="abstract-title" onclick="toggleAbstract(event)">
+                 <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
+               </div>
+               <div class="abstract-content">
+                 <small>
+                  Practitioners have access to an abundance of language models and prompting strategies for solving many language modeling tasks; yet prior work shows that modeling performance is highly sensitive to both choices. 
+                  Classical machine learning ensembling techniques offer a principled approach: aggregate predictions from multiple sources to achieve better performance than any single one.
+                  However, applying ensembling to language models during decoding is challenging: naively aggregating next-token probabilities yields samples from a locally normalized, biased approximation of the generally intractable ensemble distribution over strings.
+                 In this work, we introduce a unified framework for composing <i>K</i> language models into <i>f</i>-ensemble distributions for a wide range of functions <i>f</i>: ℝ<sub>&ge;0</sub><sup><i>K</i></sup> &rarr; ℝ<sub>&ge;0</sub>.
+                  To sample from these distributions, we propose a byte-level sequential Monte Carlo (SMC) algorithm that operates in a shared character space, enabling ensembles of models with mismatching vocabularies and consistent sampling in the limit.
+                 We evaluate a family of <i>f</i>-ensembles across prompt and model combinations for various structured text generation tasks, highlighting the benefits of alternative aggregation strategies over traditional probability averaging, and showing that better posterior approximations can yield better ensemble performance.
+                   </small>
+                 </small>
+             </div>
+           </div>
+           </td>
+         </tr>
+       </table> -->
+
+       <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div class="one">
+                 <div class="two">
+                   <img src="images/pleasqlarify.png" width="100%" class="publication-img" alt="Screenshot of the LLM Analyzer project">
+                 </div>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                 <h3 class="paper-title">PleaSQLarify: Visual Pragmatic Repair for Natural Language Interfaces</h3>
+               <br>
+               <u class="small-font">Robin Chan</u>,
+               <small>Rita Sevastjanova</small>,
+               <small>Menna El-Assady</small>
+               <br>
+               <em class="small-font">Proceedings of the ACM CHI Conference on Human Factors in Computing Systems,  </em> <span class="small-font"> 2026 | </span> <a class="small-font" href="https://arxiv.org/pdf/2603.01795">pdf</a></span>
+               <br>
+               <div class="abstract">
+                 <div class="abstract-title" onclick="toggleAbstract(event)">
+                   <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
+                 </div>
+                 <div class="abstract-content">
+                   <small>
+                   Natural language database interfaces broaden data access, yet they remain brittle under input ambiguity.
+                   Standard approaches often collapse uncertainty into a single query, offering little support for mismatches between user intent and system interpretation.
+                   We reframe this challenge through pragmatic inference: while users economize expressions, systems operate on priors over the action space that may not align with the users'.
+                   In this view, pragmatic repair&mdash;incremental clarification through minimal interaction&mdash;is a natural strategy for resolving underspecification.
+                   We present <span style="font-variant: small-caps;">PleaSQLarify</span>, which operationalizes pragmatic repair by structuring interaction around interpretable decision variables that enable efficient clarification.
+                   A visual interface complements this by surfacing the action space for exploration, requesting user disambiguation, and making belief updates traceable across turns. In a study with twelve participants, <span style="font-variant: small-caps;">PleaSQLarify</span> helped users recognize alternative interpretations and efficiently resolve ambiguity.
+                   Our findings highlight pragmatic repair as a design principle that fosters effective user control in natural language interfaces.
+                     </small>
+                   </small>
+               </div>
+             </div>
+               <!-- <p class="publication-tags"><strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Language Model Explainability</strong></p> -->
+             </td>
+           </tr>
+         </table>
+
+
+        <!-- <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+           <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+               <div class="two">
+                 <img src="images/llm-analyzer.png" width="100%" class="publication-img" alt="Screenshot of the LLM Analyzer project">
+               </div>
+           </td>
+           <td style="padding:20px;width:75%;vertical-align:middle">
+               <h3 class="paper-title">Understanding Large Language Model Behaviors through Interactive Counterfactual Generation and Analysis</h3>
+             <br>
+             <small>Furui Cheng</small>,
+             <small>Vilém Zouhar</small>,
+             <u class="small-font">Robin Chan</u>,
+             <small>Daniel Fürst</small>,
+             <small>Hendrik Strobelt</small>,
+             <small>Menna El-Assady</small>
+             <br>
+             <em class="small-font">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS'25) </em><span class="small-font">, 2025 | </span> <a class="small-font" href="https://www.semanticscholar.org/reader/2b253bfc97d3617c52201153c6d2191503ab98e4">pdf</a>
+             <br>
+             <div class="abstract">
+               <div class="abstract-title" onclick="toggleAbstract(event)">
+                 <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
+               </div>
+               <div class="abstract-content">
+                 <small>
+                   Counterfactual examples are useful for exploring the decision boundaries of machine learning models and determining
+                     feature attributions. How can we apply counterfactual-based methods to analyze and explain LLMs? We identify the following key
+                     challenges. First, the generated textual counterfactuals should be meaningful and readable to users and thus can be mentally compared
+                     to draw conclusions. Second, to make the solution scalable to long-form text, users should be equipped with tools to create batches of
+                     counterfactuals from perturbations at various granularity levels and interactively analyze the results. In this paper, we tackle the above
+                     challenges and contribute 1&#41; a novel algorithm for generating batches of complete and meaningful textual counterfactuals by removing
+                     and replacing text segments in different granularities, and 2&#41; LLM Analyzer, an interactive visualization tool to help users understand
+                     an LLM's behaviors by interactively inspecting and aggregating meaningful counterfactuals. We evaluate the proposed algorithm by
+                     the grammatical correctness of its generated counterfactuals using 1,000 samples from medical, legal, finance, education, and news
+                     datasets. In our experiments, 97.2% of the counterfactuals are grammatically correct. Through a use case, user studies, and feedback
+                     from experts, we demonstrate the usefulness and usability of the proposed interactive visualization tool
+                   </small>
+                 </small>
+             </div>
+           </div>
+           </td>
+         </tr>
+       </table> -->
 
         <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <!-- <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -225,7 +359,7 @@
               <br>
               <small>Moritz Dück</small>,
               <small>Steffen Holter</small>,
-              <u class="small-font">Robin SM Chan</u>, 
+              <u class="small-font">Robin Chan</u>, 
               <small>Rita Sevastjanova</small>,
               <small>Menna El-Assady</small>
               <br>
@@ -245,9 +379,8 @@
                   </small>
                 </div>
               </div>
-              <!-- <p class="publication-tags"><strong class="small-font">Interactive Systems </strong>&#183;<strong class="small-font"> Language Models</strong></p> -->
             </td>
-          </tr>
+          </tr> -->
 
 
           <!-- <tr>
@@ -260,7 +393,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <h3 class="paper-title">A Design Space for Intelligent Dialogue Augmentation</h3>
               <br>
-              <u class="small-font">Robin SM Chan</u>, 
+              <u class="small-font">Robin Chan</u>, 
               <small>Anne Marx</small>,
               <small>Alison Kim</small>,
               <small>Menna El-Assady</small>
@@ -297,7 +430,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <h3 class="paper-title">On Affine Homotopy between Language Encoders</h3>
               <br>
-              <u class="small-font">Robin SM Chan</u>, 
+              <u class="small-font">Robin Chan</u>, 
               <small>Reda Boumasmoud</small>,
               <small>Anej Svete</small>,
               <small>Yuxin Ren</small>,
@@ -328,10 +461,8 @@
                   </small>
                 </div>
               </div>
-              <!-- <p class="publication-tags"><strong class="small-font">Representational Similarity </strong>&#183;<strong class="small-font"> Language Encoders</strong></p> -->
             </td>
           </tr>
-      </tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -342,7 +473,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <h3 class="paper-title">Adapting LLMs for Structured Natural Language API Integration</h3>
               <br>
-              <u class="small-font">Robin SM Chan</u>, 
+              <u class="small-font">Robin Chan</u>, 
               <small>Katsiaryna Mirylenka</small>,
               <small>Thomas Gschwind</small>,
               <small>Christoph Miksovic-Czasch</small>,
@@ -374,7 +505,8 @@
               <!-- <p class="publication-tags"><strong class="small-font">Language Model Control </strong>&#183;<strong class="small-font"> Parameter-Efficient Fine-Tuning </strong></p> -->
             </td>
           </tr>
-        <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      </tbody></table>
+        <!-- <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -387,7 +519,7 @@
               <br>
               <small>Nadav Borenstein</small>,
               <small>Anej Svete</small>,
-              <u class="small-font">Robin SM Chan</u>, 
+              <u class="small-font">Robin Chan</u>, 
               <small>Josef Valvoda</small>,
               <small>Franz Nowak</small>,
               <small>Isabelle Augenstein</small>,
@@ -428,10 +560,9 @@
               </small>
             </div>
           </div>
-              <!-- <p class="publication-tags"><strong class="small-font">Large Language Models </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p> -->
             </td>
           </tr>
-      </tbody>
+      </tbody></table>
   
         <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -445,14 +576,11 @@
               <h3 class="paper-title">On Efficiently Representing Regular Languages as RNNs</h3>
               <br>
               <small>Anej Svete</small>,
-              <u class="small-font">Robin SM Chan</u>,
+              <u class="small-font">Robin Chan</u>,
               <small>Ryan Cotterell</small>
               <br>
               <em class="small-font">Findings of ACL</em><span class="small-font">, 2024 | </span> <a class="small-font" href="https://aclanthology.org/2024.findings-acl.244.pdf">pdf</a>
               <br>
-              <!-- <br>
-              <a class="small-font" href="https://arxiv.org/pdf/2402.15814.pdf">arXiv</a><span class="small-font"></span>
-              <br> -->
               <div class="abstract">
                 <div class="abstract-title" onclick="toggleAbstract(event)">
                   <small>Abstract <i class="fas fa-chevron-down arrow" aria-hidden="true"></i></small>
@@ -478,10 +606,9 @@
                   </small>
               </div>
             </div>
-              <!-- <p class="publication-tags"><strong class="small-font">Language Model Expressivity </strong>&#183;<strong class="small-font"> Formal Language Theory</strong></p> -->
             </td>
           </tr>
-      </tbody></table>
+      </tbody></table> -->
         <table class="publication-table publication-table--hoverable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       </tbody></table>
@@ -522,7 +649,7 @@
               </td>
             </tr>
         </tbody></table>
-        <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
@@ -532,7 +659,7 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
   
           </div>
         </div>
@@ -551,8 +678,7 @@
 
 
   <script>
-    function toggleAbstract(event) {
-      var titleElement = event.currentTarget;
+    function toggleAbstractByTitle(titleElement) {
       var contentElement = titleElement.nextElementSibling;
       var arrowElement = titleElement.querySelector('.arrow');
 
@@ -565,9 +691,47 @@
       }
     }
 
+    function toggleAbstract(event) {
+      event.stopPropagation();
+      toggleAbstractByTitle(event.currentTarget);
+    }
+
+    function setupPublicationRowToggle() {
+      var publicationRows = document.querySelectorAll('.publication-table--hoverable > tbody > tr');
+      publicationRows.forEach(function (row) {
+        row.addEventListener('click', function (event) {
+          // Keep regular link behavior and avoid toggling while interacting with open abstract text.
+          if (event.target.closest('a') || event.target.closest('.abstract-content')) {
+            return;
+          }
+          var titleElement = row.querySelector('.abstract-title');
+          if (titleElement) {
+            toggleAbstractByTitle(titleElement);
+          }
+        });
+      });
+    }
+
     window.addEventListener('load', function () {
       document.body.classList.add('is-loaded');
+      setupPublicationRowToggle();
     });
+
+    function markPastAttendingEvents() {
+      var eventItems = document.querySelectorAll('.attending-item[data-event-date]');
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      eventItems.forEach(function (eventItem) {
+        var dateString = eventItem.getAttribute('data-event-date');
+        var eventDate = new Date(dateString + 'T00:00:00');
+        if (!isNaN(eventDate.getTime()) && eventDate < today) {
+          eventItem.classList.add('attending-item--past');
+        }
+      });
+    }
+
+    markPastAttendingEvents();
   </script>
 
 
