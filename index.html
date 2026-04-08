@@ -727,12 +727,13 @@
     function markPastAttendingEvents() {
       var eventItems = document.querySelectorAll('.attending-item[data-event-date]');
       var today = new Date();
-      today.setHours(0, 0, 0, 0);
+      var currentMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
 
       eventItems.forEach(function (eventItem) {
         var dateString = eventItem.getAttribute('data-event-date');
         var eventDate = new Date(dateString + 'T00:00:00');
-        if (!isNaN(eventDate.getTime()) && eventDate < today) {
+        var eventMonthStart = new Date(eventDate.getFullYear(), eventDate.getMonth(), 1);
+        if (!isNaN(eventDate.getTime()) && eventMonthStart < currentMonthStart) {
           eventItem.classList.add('attending-item--past');
         }
       });
