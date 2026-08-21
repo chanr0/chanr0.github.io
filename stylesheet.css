@@ -775,6 +775,13 @@ body.is-loaded #content {
     padding-right: 16px;
   }
 
+  /* Stacked, the section's own top padding piles onto the grid row gap and
+     the card's bottom padding, leaving a 54px hole under the contact links.
+     Let the row gap alone set the separation. */
+  .about-section {
+    padding-top: 0;
+  }
+
   .profile-column {
     position: static;
   }
