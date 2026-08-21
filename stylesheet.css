@@ -335,12 +335,6 @@ body.is-loaded #content {
   hyphens: auto;
 }
 
-@media (max-width: 600px) {
-  .about-section p {
-    padding-right: 0;
-  }
-}
-
 .main-column table {
   width: 100%;
 }
@@ -774,6 +768,13 @@ body.is-loaded #content {
     grid-template-columns: 1fr;
   }
 
+  /* Single column: the desktop right-only inset reads as lopsided once the
+     profile card is no longer beside the text, so inset both sides evenly. */
+  .about-section p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .profile-column {
     position: static;
   }
@@ -792,6 +793,13 @@ body.is-loaded #content {
   html {
     overflow-x: hidden;
     width: 100%;
+  }
+
+  /* the table cell below contributes 10px of its own here, so trim the
+     paragraph inset to keep the total matching the wider single-column case */
+  .about-section p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .card {
